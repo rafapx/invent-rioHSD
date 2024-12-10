@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfilador Social: Mapeie Suas Competências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Perfilador Social: Mapeie Suas Competências</h1>
+        <p>Descubra suas habilidades sociais e use-as a seu favor!</p>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Bem-vindo(a)!</h2>
+            <p>Este teste foi criado para ajudá-lo a descobrir suas habilidades sociais e como você pode usá-las a seu favor. Ao explorar suas competências, você poderá identificar áreas de força e oportunidades de desenvolvimento. Prepare-se para uma jornada de autoconhecimento!</p>
+            <button onclick="startTest()">Iniciar o Teste</button>
+        </section>
+
+        <section id="quiz" style="display:none;">
+            <h2>O Teste</h2>
+            <form id="social-skills-form">
+                <div class="question">
+                    <label for="comm1">1. Quando estou em uma roda de amigos:</label>
+                    <select id="comm1" name="comm1">
+                        <option value="2">A) Me sinto à vontade para compartilhar histórias e opiniões</option>
+                        <option value="1">B) Falo um pouco, mas às vezes me seguro</option>
+                        <option value="0">C) Prefiro mais ouvir do que falar</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="comm2">2. Se preciso fazer uma apresentação:</label>
+                    <select id="comm2" name="comm2">
+                        <option value="2">A) Encaro o desafio, mesmo com um frio na barriga</option>
+                        <option value="1">B) Faço, mas fico bastante ansioso(a)</option>
+                        <option value="0">C) Tento evitar ao máximo</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="expr1">3. Quando estou feliz:</label>
+                    <select id="expr1" name="expr1">
+                        <option value="2">A) Demonstro abertamente minha alegria</option>
+                        <option value="1">B) Demonstro de forma mais contida</option>
+                        <option value="0">C) Guardo mais para mim</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="assert1">4. Quando algo me incomoda:</label>
+                    <select id="assert1" name="assert1">
+                        <option value="2">A) Consigo dizer de forma clara e respeitosa</option>
+                        <option value="1">B) Às vezes falo, outras guardo para mim</option>
+                        <option value="0">C) Geralmente evito mencionar</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="empathy1">5. Quando alguém está triste:</label>
+                    <select id="empathy1" name="empathy1">
+                        <option value="2">A) Consigo oferecer apoio e conforto</option>
+                        <option value="1">B) Quero ajudar mas nem sempre sei como</option>
+                        <option value="0">C) Me sinto desconfortável com a situação</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="selfCtrl1">6. Em situações de estresse:</label>
+                    <select id="selfCtrl1" name="selfCtrl1">
+                        <option value="2">A) Geralmente mantenho a calma</option>
+                        <option value="1">B) Fico ansioso(a) mas me controlo</option>
+                        <option value="0">C) Tendo a me descontrolar ou paralisar</option>
+                    </select>
+                </div>
+                <button type="submit">Ver Resultados</button>
+            </form>
+        </section>
+
+        <section id="results" style="display:none;">
+            <h2>Seus Resultados</h2>
+            <div id="result-summary"></div>
+            <div id="profile-analysis"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Perfilador Social</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
